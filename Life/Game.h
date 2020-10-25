@@ -16,7 +16,6 @@ public:
 		field.resize(size * size);
 		for (int i = 0; i < field.size(); i++) field[i] = State::dead;
 
-		field[23] = State::alive;
 		box.setSize(Vector2f(width / size, width / size));
 		box.setFillColor(Color::Black);
 		length = width / size;
@@ -30,4 +29,7 @@ public:
 	std::vector<State> field, newField;
 	int size = 0, length = 0, width = 0;
 	RectangleShape box;
+
+	float time = 0, timer = 0, delay = 0.3f;
+	Clock clock;
 };

@@ -1,5 +1,6 @@
 #include <SFML/Graphics.hpp>
 #include "Game.h"
+#include <iostream>
 
 using namespace sf;
 const int WIDTH = 640, HEIGHT = WIDTH;
@@ -11,7 +12,7 @@ int main() {
 	Event e;
 	Mouse m;
 
-	Game game(20,WIDTH);
+	Game game(40,WIDTH);
 	bool start = 0;
 
 	//Game loop
@@ -19,7 +20,7 @@ int main() {
 		while (window.pollEvent(e)) {
 			if (e.type == Event::Closed) window.close();
 			if (Event::KeyPressed) 	if (e.key.code == Keyboard::S) {
-				if (start) start = 0; else start = 1;
+				start = 1;
 			}
 		}
 
