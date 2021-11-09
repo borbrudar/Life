@@ -4,7 +4,7 @@ if(WIN32)
     set(CMAKE_INSTALL_PREFIX C:/ CACHE PATH "default path" FORCE)
 endif()
 set(PR_NAME Life)
-project(${PR_NAME} VERSION 0.1.1)
+project(${PR_NAME} VERSION 0.1.0)
 set (CMAKE_CXX_STANDARD 17)
 include(GNUInstallDirs)
 
