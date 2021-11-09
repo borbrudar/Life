@@ -1,1 +1,0 @@
-/bin/x86_64-linux-gnu-g++-9  -g   CMakeFiles/Life.dir/src/Game.cpp.o CMakeFiles/Life.dir/src/main.cpp.o  -o Life  -Wl,-rpath,/home/bor/source/Life/build/external/SFML/lib: external/SFML/lib/libsfml-graphics-d.so.2.5.1 external/SFML/lib/libsfml-audio-d.so.2.5.1 external/SFML/lib/libsfml-window-d.so.2.5.1 external/SFML/lib/libsfml-system-d.so.2.5.1 
